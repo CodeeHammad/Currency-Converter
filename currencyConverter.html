@@ -20,39 +20,32 @@
         <form action="">
           <div class="amount">
             <p>Enter Amount</p>
-            <input type="text" value="100" />
+            <input type="number" value="100" />
           </div>
           <div class="dropdown">
             <div class="from">
               <p>From</p>
               <div class="selectcontainer">
                 <img src="https://flagsapi.com/US/flat/64.png" />
-                <select name="from" id="">
-                  <option value="USD">USD</option>
-                  <option value="PKR">PKR</option>
-                  <option value="INR">INR</option>
-                  <option value="AUD">AUD</option>
-                  <option value="EUR">EUR</option>
-                </select>
+                <select name="from" id=""></select>
               </div>
             </div>
             <i class="fa-solid fa-arrow-right-arrow-left"></i>
-            <div class="to"><p>To</p></div>
-            <div class="selectcontainer">
-              <img src="https://flagsapi.com/PK/flat/64.png" />
-              <select name="To" id="">
-                <option value="USD">USD</option>
-                <option value="PKR" selected>PKR</option>
-                <option value="INR">INR</option>
-                <option value="AUD">AUD</option>
-                <option value="EUR">EUR</option>
-              </select>
+            <div class="to">
+              <p>To</p>
+              <div class="selectcontainer">
+                <img src="https://flagsapi.com/PK/flat/64.png" />
+                <select name="to" id="to"></select>
+              </div>
             </div>
           </div>
           <div class="msg">1 USD = 281</div>
-          <button>Get Exchange Rate</button>f
+          <button>Get Exchange Rate</button>
         </form>
       </div>
     </section>
+
+    <script src="countryCodes.js"></script>
+    <script src="web.js"></script>
   </body>
 </html>
